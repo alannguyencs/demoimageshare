@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cookpad</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+</head>
+
+<body>
+    <div id="header">
+        <h3>Image Share WebApp</h3>
+    </div>
+
+    <div id="left">
+        <h4>{{text_username | safe}}</h4>
+    </div>
+
+    <!--<a href="{{ url_for('homepage') }}">-->
+    <a href="/">
+        <div id="right">
+            <h4>Logout</h4>
+        </div>
+    </a>
+
+
+    <div class="upload"> 
+        <form action="{{url_for('upload')}}" method="POST" enctype="multipart/form-data"> 
+            <input type="file" name="file"><br /><br /> 
+            <input type="submit" value="{{upload_button}}"> 
+            <input type = "hidden" name = "username" value="{{text_username}}"> 
+        </form> 
+    </div>
+
+      <div class = "message">     {{text_upload_error | safe}} 
+    </div>  
+
+    <div> 
+        <img class="image" src={{src_image | safe}} /> 
+    </div>  
+
+    <div class = "message"> 
+        {{text_delete_error | safe}} 
+    </div> 
+
+    <div class = "dele"> 
+        <form action="{{url_for('delete')}}" method = "POST" > 
+            <button type="submit">Delete</button> 
+            <input type = "hidden" name = "username" value="{{text_username}}"> 
+        </form> 
+    </div>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cookpad</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+</head>
+
+<body>
+    <div id="header">
+        <h3>Image Share WebApp</h3>
+    </div>
+    <a href="{{ url_for('login') }}">
+        <div id="left">
+            <h4>Login</h4>
+        </div>
+    </a>
+    <a href="{{ url_for('signup') }}">
+        <div id="right">
+            <h4>Signup</h4>
+        </div>
+    </a>
+
+
+
+
+</body>
+</html>
+
+

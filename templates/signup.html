@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cookpad</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="{{url_for('static',filename='main.css')}}" />
+</head>
+
+<body>
+    <a href="/">
+        <div id="header">
+            <h3>Homepage</h3>
+        </div>
+    </a>
+
+<h2>Create your ImageShare Account</h2>
+<div class = "message">
+    {{text | safe}}
+</div>
+<form style="border:1px solid #ccc" action= "{{url_for('signup_result')}}" method="POST">
+  <div class="container">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <label><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw_repeat" required>
+
+
+     <button type="submit">Signup</button>
+
+
+  </div>
+</form>
+
+
+</body>
+</html>
+
+
