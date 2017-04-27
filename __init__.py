@@ -8,8 +8,8 @@ import string
 import random
 
 app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://alan:songthao@localhost/cookpad'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zgzufrzhgimzwd:0a1552a24673b8998db6be5df4655a18f6fb3e8fdffe2f7e9098765da1e5368f@ec2-54-221-244-196.compute-1.amazonaws.com:5432/dak000ootl4vot?sslmode=require'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://alan:songthao@localhost/cookpad'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://zgzufrzhgimzwd:0a1552a24673b8998db6be5df4655a18f6fb3e8fdffe2f7e9098765da1e5368f@ec2-54-221-244-196.compute-1.amazonaws.com:5432/dak000ootl4vot?sslmode=require'
 app.config['UPLOAD_FOLDER'] = 'uploads/'
 app.config['ALLOWED_EXTENSIONS'] = set(['png', 'jpg', 'jpeg'])
 db = SQLAlchemy(app)
