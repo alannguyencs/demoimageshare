@@ -1,6 +1,6 @@
 #header{
     background-color: #1d6700;
-    color: #FFFFFF;
+    color: #1d6700;
     font-size: 30px;
     padding: 7px 10px;
     margin: 8px 0;
@@ -136,4 +136,8 @@ span.psw {
     width: 100px;
     text-align: center;
 
+}
+
+.link{
+    text-decoration: none;
 }
