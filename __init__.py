@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, send_from_directory
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.sql import func
 import os
-import PIL   #pip install Pillow
 from PIL import Image
 import string
 import random
