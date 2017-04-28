@@ -10,3 +10,5 @@ This web app performs mainly 3 users stories:
 Programming Language: Python 3
 
 Framework: Flask
+
+Database: PostgreSQL
